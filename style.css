@@ -1,0 +1,60 @@
+*{
+  margin:0;
+  padding:0;
+  background-color: rgb(1, 1, 24);
+}
+
+#game{
+  width:400px;
+  height:500px;
+  background-image: url('city.jpg');
+  border: 2px solid black;
+  margin:auto;
+  overflow: hidden;
+  background-attachment: fixed;
+  border-width:5px;  
+  border-style:groove;
+  border-color: rgb(0, 0, 75);
+
+  
+}
+  
+#block{
+  width:50px;
+  height:500px;
+  background-image: linear-gradient(to right, rgb(73, 173, 6),rgb(72, 255, 0),rgb(123, 255, 0),green,green,rgb(40, 121, 8),rgb(32, 126, 24));
+  position: relative;
+  left: 400px;
+  animation: block 1s infinite linear;
+  
+}
+
+@keyframes block{
+  0%{left:400px}
+  100%{left:-50px}
+}
+
+
+#hole{
+  width:50px;
+  height:150px;
+  background-image: url('city.jpg');
+  position: relative;
+  left:400px;
+  top:-500px;
+  animation: block 1s infinite linear;
+  background-attachment: fixed;
+}
+
+#character{
+  width: 40px;
+  height:40px;
+  background-image: url('bird.png');
+  position: absolute;
+  top:50px;
+  background-color: rgba(0, 0, 255, 0);
+  background-size: 40px;
+  
+  
+}
+
